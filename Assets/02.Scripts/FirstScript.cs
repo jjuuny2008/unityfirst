@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class FirstScript : MonoBehaviour
@@ -7,29 +8,28 @@ public class FirstScript : MonoBehaviour
     // Start is called before the first frame update
 
 
-    public FirstScript() {
-        Debug.Log("Constructer");
-    }
-
-
-    public int thisYear=2025;
-    public float pi = 3.14f;
-    public string myName = "±ËπŒ¡ÿ";
-    public bool isGameOver = false;
+    float hp = 90.0f;
+    float incomeDamage = 100.0f;
+    bool IsGameOver = false;
 
     void Start()
-    {       
-        Debug.Log(thisYear);
-
-        Debug.Log(pi);
-
-        Debug.Log(myName);
-
-        Debug.Log(isGameOver);
+    {
+        hp -= incomeDamage;
+        Debug.Log(hp);
+        if (hp < 0)
+        {
+            IsGameOver = true;
+        }
+        if (IsGameOver)
+        {
+            Debug.Log("∞‘¿” ø¿πˆ");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+       
+        
     }
 }
