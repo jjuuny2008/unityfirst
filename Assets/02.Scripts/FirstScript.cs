@@ -16,30 +16,20 @@ public class FirstScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
-
-
-    void EnemyAttack()
+    float NextYear(int thisyear)
     {
-        Debug.Log("Enemy Attack");
-        Debug.Log("Enemy Damage");
-        Debug.Log("Enemy HP UI Update");
-    }
-
-    int thisyear()
-    {
-        return 2025;
-    }
-
-    float NextYear()
-    {
-        return thisyear() + 1;
+        return thisyear + 1;
     }
     void Start()
     {
-        Debug.Log(NextYear());
-
+        Debug.Log(plusnum(1));
+        Debug.Log(plusnum(3, 2));
+        
     }
+
+    int plusnum(int a) {  return a +8; }
+    int plusnum(int a, int b) { return a +b; }
+
 
     // Update is called once per frame
     void Update()
