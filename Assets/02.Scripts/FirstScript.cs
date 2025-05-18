@@ -16,18 +16,27 @@ public class FirstScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    float NextYear(int thisyear) { return thisyear++;  }
-        
-   
+
+    public List<int> myList = new List<int>();
+    public List<int> myList2 = new List<int>() {4,5,9 };
+
+
     void Start()
     {
-        Debug.Log(plusnum(1));
-        Debug.Log(plusnum(3, 2));
-        
+        myList.Add(5);
+        myList.Add(10);
+
+        myList.Insert(1, 7);
+
+        myList.Add(15);
+
+        myList.Remove(5);
+
+        myList.RemoveAt(1);
+
     }
 
-    int plusnum(int a) {  return a +8 ; }
-    int plusnum(int a, int b) { return a + b; }
+   
 
 
     // Update is called once per frame

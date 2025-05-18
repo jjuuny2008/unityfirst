@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 142856772}
   - component: {fileID: 142856771}
   - component: {fileID: 142856775}
+  - component: {fileID: 142856776}
+  - component: {fileID: 142856777}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -240,6 +242,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0c8fae6c417e65419706f3eac89fa0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &142856776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142856770}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7f37b46a811eb40b5ba96d9e0e7ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  age: 18
+  humanName: "\uAE40\uBBFC\uC900"
+  height: 167.8
+  weight: 63
+  countury: Korea
+  isMan: 1
+--- !u!114 &142856777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142856770}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bc0d67b367c4b49b6cf5049a4574e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carSerise: Ferrari
+  accidentCount: 2147483647
+  auto: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

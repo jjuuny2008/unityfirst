@@ -33,6 +33,23 @@ public class Car : MonoBehaviour
         auto = true;
     }
 
+    public void CarLeft()
+    {
+        Debug.Log("왼쪽");
+    }
+    public void CarRight()
+    {
+        Debug.Log("오른쪽");
+    }
+    public void CarForward()
+    {
+        Debug.Log("전진");
+    }
+    public void CarBackward()
+    {
+        Debug.Log("후진");
+    }
+
     void Start()
     {
         
