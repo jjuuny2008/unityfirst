@@ -21,8 +21,13 @@ public class FirstScript : MonoBehaviour
 
     void Start()
     {
-       
+        int a = 5;
 
+        int b = a;
+
+        b = 10;
+        Debug.Log(a);
+        Debug.Log(b);
     }
 
    
