@@ -16,25 +16,21 @@ public class FirstScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
+    List<string> names = new List<string>() { "Alice", "Bob", "Chalie" };
 
 
     void Start()
     {
-        int a = 5;
+        foreach (string name in names) 
+        {
+            Debug.Log(name);
+        }
 
-        int b = a;
 
-        b = 10;
-        Debug.Log(a);
-        Debug.Log(b);
+
     }
-
-   
-
-
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
        
 
