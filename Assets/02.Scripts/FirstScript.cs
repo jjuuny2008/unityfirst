@@ -16,10 +16,9 @@ public class FirstScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    float NextYear(int thisyear)
-    {
-        return thisyear + 1;
-    }
+    float NextYear(int thisyear) { return thisyear++;  }
+        
+   
     void Start()
     {
         Debug.Log(plusnum(1));
@@ -27,8 +26,8 @@ public class FirstScript : MonoBehaviour
         
     }
 
-    int plusnum(int a) {  return a +8; }
-    int plusnum(int a, int b) { return a +b; }
+    int plusnum(int a) {  return a +8 ; }
+    int plusnum(int a, int b) { return a + b; }
 
 
     // Update is called once per frame
