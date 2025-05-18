@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Human : MonoBehaviour
 {
-    float age = 18.0f;
-    string HumanName = "±ËπŒ¡ÿ";
-    float lenth = 167.8f;
-    float Killo = 63.0f;
-    string From = "Korea";
-    bool IsMan = true;
+    public float age = 18.0f;
+    public string humanName = "±ËπŒ¡ÿ";
+    public float height = 167.8f;
+    public float weight = 63.0f;
+    public string countury = "Korea";
+    public bool isMan = true;
 
-    float Eat(float killo) { return killo++; }
-    float sleep(float age) { return age += 0.0027f; }
-    bool ts(bool gender) { return !gender; }
+    public float Eat(float killo) { return killo++; }
+    public float sleep(float age) { return age += 0.0027f; }
+    public bool Ts(bool gender) { return !gender; }
 
 
     // Start is called before the first frame update
