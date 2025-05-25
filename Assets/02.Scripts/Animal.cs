@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Animal : MonoBehaviour
+public class Animal
 {
-
-    public string Name { get; set; }
-    public virtual void Speak()
+    public void Eat()
     {
-        Debug.Log("Animal makes a sound");
+        Debug.Log("동물이 음식을 먹는다");
     }
  
+}
+
+public interface IMovable
+{
+    void Move();
 }

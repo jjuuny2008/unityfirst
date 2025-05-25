@@ -4,4 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private Weapon myWeapon;
+
+    private void Start()
+    {
+        myWeapon = new TwoHandSword();
+        myWeapon.Attack();
+
+        myWeapon = new Shortbow();
+        myWeapon.Attack();
+    }
 }

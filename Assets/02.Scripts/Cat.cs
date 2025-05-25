@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cat : Animal
+public class Cat : Animal, IMovable
 {
-    public override void Speak()
+
+    public void Move()
     {
-        Debug.Log("Cat Meaws");
+        Debug.Log("고양이가 빠르게 뛰어간다");
     }
 }
+

@@ -16,23 +16,19 @@ public class FirstScript : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    List<string> names = new List<string>() { "Alice", "Bob", "Chalie" };
 
 
     void Start()
     {
-        for (int i =0; i<names.Count;i++) 
-        {
-            Debug.Log(names[i]);
-        }
+        Potion Potion = new SmallPotion();
+        Potion.FillHP();
 
+        Potion = new MiddlePotion();
+        Potion.FillHP();
 
+        Potion = new LargePotion();
+        Potion.FillHP(); 
 
-    }
-        // Update is called once per frame
-        void Update()
-    {
-       
-
+   
     }
 }
