@@ -21,9 +21,9 @@ public class FirstScript : MonoBehaviour
 
     void Start()
     {
-        foreach (string name in names) 
+        for (int i =0; i<names.Count;i++) 
         {
-            Debug.Log(name);
+            Debug.Log(names[i]);
         }
 
 
