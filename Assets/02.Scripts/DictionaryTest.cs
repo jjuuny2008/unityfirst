@@ -11,7 +11,7 @@ public class DictionaryTest : MonoBehaviour
 
     void Start()
     {
-        AddItem("포션", 6);
+        AddItem("포션", 5);
         AddItem("엘릭서", 2);
 
         UseItem("포션");
@@ -28,7 +28,7 @@ public class DictionaryTest : MonoBehaviour
         {
             items.Add(ItemName, quantity);
         }
-        Debug.Log("추가 " + quantity + " " + ItemName + "(을) 인벤토리로");
+        Debug.Log("추가 " + quantity + " " + ItemName + "(을) 인벤토리로.");
     }
     void UseItem(string ItemName)
     {
