@@ -15,6 +15,21 @@ public class DictionaryTest : MonoBehaviour
         AddItem("엘릭서", 2);
 
         UseItem("포션");
+        UseItem("포션");
+        UseItem("포션");
+
+        UseItem("엘릭서");
+        UseItem("엘릭서");
+        UseItem("엘릭서");
+
+        AddItem("주문서", 8);
+
+        UseItem("주문서");
+        UseItem("주문서");
+        UseItem("주문서");
+        UseItem("포션");
+
+        AddItem("포션", 7);
 
         PrintInventory();
     }
