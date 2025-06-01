@@ -29,5 +29,6 @@ public class EnemyController : MonoBehaviour
     void RespondToGameOver()
     {
         Debug.Log("EnemyController : 플레이어 사망, 다시 나는 Patrol로 전환");
+        OnDisable();
     }
 }
