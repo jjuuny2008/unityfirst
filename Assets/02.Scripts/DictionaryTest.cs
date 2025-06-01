@@ -42,6 +42,10 @@ public class DictionaryTest : MonoBehaviour
             }
             Debug.Log("사용한 아이템 : " + ItemName);
         }
+        else
+        {
+            Debug.Log("아이템 " + ItemName + "을 인벤토리에서 찾을 수 없음");
+        }
     }
     void PrintInventory()
     {
