@@ -28,12 +28,20 @@ public class DelegateExample : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MyDelegate myDelegate = PrintMessage;
+        MyDelegate myDelegate = null;
+
+        myDelegate += PrintMessage;
+        myDelegate += LogMessage;
         myDelegate += DangerMessage;
-        myDelegate += WarningMessage;
+        myDelegate += WarningMessage; 
+
+
         myDelegate("Hello World!");
-        myDelegate -= DangerMessage;
+
+        myDelegate -= LogMessage;
         myDelegate -= WarningMessage;
+        myDelegate -= DangerMessage;
+        
         myDelegate("Hello World!");
     }
 
